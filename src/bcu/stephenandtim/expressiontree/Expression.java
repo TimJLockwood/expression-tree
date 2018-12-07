@@ -1,4 +1,4 @@
-package bcu.changeme.expressiontree;
+package bcu.stephenandtim.expressiontree;
 
 import java.util.*;
 
@@ -9,15 +9,15 @@ public abstract class Expression {
 	public final double evaluate() {
 		return evaluate(Collections.emptyMap());
 	}
-	
+
 	/*
 	 * Evaluates this expression, using the given variable assignments.
 	 */
 	public abstract double evaluate(Map<String, Double> variables);
-	
+
 	/*
-	 * Returns an unmodifiable set containing the names of all free variables
-	 * in this expression.
+	 * Returns an unmodifiable set containing the names of all free variables in
+	 * this expression.
 	 */
 	public abstract Set<String> freeVariables();
 }
